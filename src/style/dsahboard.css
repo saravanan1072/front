@@ -1,0 +1,226 @@
+
+
+/* dashboard */
+.dasboard-nav-one{
+    width: 100%;
+    height: auto;
+    margin-left: 100px;
+    display: flex; 
+     justify-content: flex-start;
+    
+}
+.dasboard-nav-one span{
+    margin: 10px;
+
+}
+.logo1{
+    width: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.dasboard-nav-two{
+    margin-right: 10px;
+    position: relative;
+    top: -50px;
+    display: flex;
+    justify-content: flex-end;
+}
+.dasboard-nav-two span{
+    margin: 10px;
+
+}
+.dasg-pic{
+    width: 30px;
+    border-radius: 50%;
+}
+hr{
+    position: relative;
+    top: -50px;
+    color: black;
+}
+.vl{
+    position: relative;
+    top: -65px;
+    margin-right: 100px;
+    border-right: 1px solid rgb(9, 9, 9);
+    height: 700px;
+    z-index: -1;
+}
+.vl .i{
+    position: relative;
+    top: 20px;
+    left: 150px;
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+.vl .i p{
+   
+    position: relative;
+    top: 15px;
+    /* padding: 10px; */
+    left: -50px;
+
+}
+.img-center,.text-align{
+    position: relative;
+    top: -600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s{
+    position: absolute;
+    top: 30px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.bttn{
+    position: absolute;
+    top: 120px;
+    left: 700px;
+    background-color: tomato;
+}
+
+
+/* course */
+ .background{
+    width: auto;
+    height: auto;
+    background-color: rgb(16, 16, 115);
+    color: white;
+}
+#course div div{
+    float: left;
+    margin-top: 50px;
+    margin-left: 100px;
+    text-align: left;
+    
+}
+.div-text{
+    font-size: 22px;
+
+}
+
+#course div div img{
+    /* margin-right: 120px;
+    width: 400px; */
+    float: right;
+}
+.b-browse,.b-try{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    background-image:linear-gradient( to right,rgba(243, 13, 13, 0.929),rgb(232, 236, 22));
+}
+.b-try{
+    background-image: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Course-nav-page{
+    background-color: rgb(22, 51, 110);
+    position: fixed;
+    top: 0px;
+    border-bottom:1px solid white ;
+    box-sizing:border-box ;
+    z-index: +20;
+}
+.whole-container-course{
+    box-sizing:border-box ;
+    height: 100vh;
+    background:linear-gradient(rgb(21, 54, 119),rgb(160, 36, 160)) ;
+}
+.parent-box-course{
+    display:flex;
+    /* margin-top: 6%; */
+    transform: translateY(20%);
+    padding: 20px;
+}
+.footer-media-course-page{
+    transform: translateY(18.5%);
+}
+.buy-now-btn{
+    width: 200px;
+    margin: 10px 0px;
+    background-color: rgb(19, 145, 19);
+    color: white;
+    animation: animate 5s linear infinite;
+}
+/* @keyframes animate {
+    0%{
+        width: 210px;
+        height: 45px;
+    }50%{
+        width: 220px;
+        height: 50px;
+    }100%{
+        width: 200px;
+        height: 40px;
+    }
+} */
+.head-title-child-course{
+    font-size: 40px;
+    font-weight: 700;
+}
+.sub-head-title-child-course{
+    margin: 20px 0px;
+    font-size: 26px;
+    font-weight: 600;
+}
+.inner-box-course-rating{
+    display: flex;
+    align-items: center;
+}
+.inner-box-course-rating1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.strong-text-rate{
+    
+    position: relative;
+   
+    left: 10px;
+    font-size: 32px;
+    margin-left: 350px;
+    font-weight: 600;
+}
+.strong-text-rate1{
+    font-size: 26px;
+    font-weight: 600;
+}
+.container-box-course-inner-parent{
+    display: flex;
+    flex-direction: column;
+}
+.content-box-rate{
+      font-size: 18px;
+}
