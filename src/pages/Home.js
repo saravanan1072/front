@@ -38,7 +38,7 @@ export default function Home() {
 
             </div>
        </div>
-       <p style={{fontSize:"32px",margin:"auto",padding:"20px",fontWeight:"bolder"}}>14,000+ CODING NINJAS TO INSPIRE YOU</p>
+       <p  className="ma" style={{fontSize:"32px",margin:"auto",padding:"20px",fontWeight:"bolder"}}>14,000+ CODING NINJAS TO INSPIRE YOU</p>
 
       <Section2/>
       <button className='btn'>Hear more stories from our alumni</button>
