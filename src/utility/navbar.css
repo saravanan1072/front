@@ -3,6 +3,8 @@
     margin: 0px;
     padding: 0px;
 }
+
+
 #nav{
     /* position: sticky;
     top: 0px;
@@ -16,11 +18,13 @@
     /* z-index: 1; */
    
 }
+
 #nav ol{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 #nav ol li{
     position: relative;
     margin-top: 10px;
@@ -194,3 +198,56 @@ text-align: center;
     text-align: center;
     border-radius: 10px;
 }
+
+#boxx{
+    display: none;
+}
+.label{
+    float: right;
+    margin: 10px;
+    font-size: 28px;
+    display: none;
+}
+.hlo{
+    margin: 10px;
+    float: left;
+    display: none;
+}
+
+@media (max-width:480px) {
+    .label{     
+        display: initial;
+    }
+    .hlo{
+        display: initial;
+    }
+    #nav{
+        position: absolute;
+        color: black;
+        height: 400px;
+        top: 50px;left: 0px;right: 0px;
+        z-index: 1000;
+        background-color: white;
+        display: none;
+    }
+    #nav ol li{
+        width: 100%;
+    }
+    #nav ol li ol{
+        position: relative;
+        width: 100%;
+    }
+    #nav ol li ol li{
+        background-color: bisque;
+    }
+    #boxx:checked ~ #nav{
+        display: initial;
+    } 
+    .dis{
+        display: none;
+    }
+   
+
+
+}
+

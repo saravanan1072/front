@@ -64,20 +64,20 @@ function Navbar() {
     e.preventDefault()
 
     axios.post("https://ninja-wclb.onrender.com/signin", data1)
-      .then(async(res) => {
+      .then(async (res) => {
         console.log(res.data.fetchfirstName);
         setUser(res.data.fetchfirstName)
         alert("login sucessfully")
         setCentredModal(!centredModal)
         setLoginform(!loginform);
-        
+
 
       })
       .catch((err) => {
         console.log(err);
 
       })
-      
+
 
   }
   const handleenroll = () => {
@@ -87,214 +87,227 @@ function Navbar() {
     window.scroll({ top: 2800 })
 
   }
- 
+
 
 
 
 
   return (
-    <div id='nav'>
-      <ol >
-        <li><img src='https://files.codingninjas.in/logo_variants-white-25005.png' alt='logo' width={"100px"} /></li>
-        <li className='hi' >course <i className="fa-sharp fa-solid fa-caret-down"></i>
-          <ol className='dropdown'>
-            <li >
-              <div style={{ textAlign: "left" }}>
-                <h3>What is your work experience?</h3>
-                <p>This will help us recommend the best programs for you.</p>
-              </div>
-              <div className='flex-container' >
-                <div onClick={handle} className='flex-container-hover' >
-                  <img src={student} alt='student' />
-                  <p className='p'>No work <br /> experience <i className="fa-solid fa-greater-than"></i></p>
-                  <p>Designed as per college student schedule</p>
+    <>
+      
+        <input type='checkbox' id="boxx"  />
+        <label className='label' htmlFor='boxx'><i class="fa-solid fa-bars"></i></label>
+        <li><img className='hlo' src='https://files.codingninjas.in/logo_variants-white-25005.png' alt='logo' width={"100px"} /></li>
+
+      
+
+      <div id='nav'>
+        <ol >
+
+          <li><img className='dis' src='https://files.codingninjas.in/logo_variants-white-25005.png' alt='logo' width={"100px"} /></li>
+          <li className='hi' >course <i className="fa-sharp fa-solid fa-caret-down"></i>
+            <ol className='dropdown'>
+              <li >
+                <div style={{ textAlign: "left" }}>
+                  <h3>What is your work experience?</h3>
+                  <p>This will help us recommend the best programs for you.</p>
                 </div>
-                <div onClick={handle} className='flex-container-hover' >
-                  <img src={professional} alt='student' />
-                  <p className='p'>Having work <br /> experience <i className="fa-solid fa-greater-than"></i></p>
-                  <p>Designed as per working professional schedule</p>
+                <div className='flex-container' >
+                  <div onClick={handle} className='flex-container-hover' >
+                    <img src={student} alt='student' />
+                    <p className='p'>No work <br /> experience <i className="fa-solid fa-greater-than"></i></p>
+                    <p>Designed as per college student schedule</p>
+                  </div>
+                  <div onClick={handle} className='flex-container-hover' >
+                    <img src={professional} alt='student' />
+                    <p className='p'>Having work <br /> experience <i className="fa-solid fa-greater-than"></i></p>
+                    <p>Designed as per working professional schedule</p>
 
 
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
 
-          </ol>
+            </ol>
 
 
-        </li>
-        <li>Scholarship <span className='upto'>UP TO 100% OFF</span></li>
-        <li>community <i className="fa-sharp fa-solid fa-caret-down"></i></li>
-        <li>pratice <i className="fa-sharp fa-solid fa-caret-down"></i>
-          <ol className='drop'>
-            <li >Coding Ninja Studio</li>
-            <li>Contest</li>
-            <li>Guided paths</li>
-            <li>Code Problems</li>
-            <li>Interview experience</li>
-            <li>Mock tests</li>
-          </ol>
-        </li>
-        <li> <img src='https://files.codingninjas.in/careercamp-12614.svg ' alt='logo-camp' /></li>
-  {console.log(user)}
-        <li>{user ?<div><Link to={'/dashboard'}><span  className='room'>My Class room</span></Link> &nbsp; <span className='span'><img src='https://files.codingninjas.com/gen-assets/Avtar.png' className='dashpic'  alt=''/> <button onClick={handlelogout} className='btn-logout'>logout</button></span> </div> 
+          </li>
+          <li>Scholarship <span className='upto'>UP TO 100% OFF</span></li>
+          <li>community <i className="fa-sharp fa-solid fa-caret-down"></i></li>
+          <li>pratice <i className="fa-sharp fa-solid fa-caret-down"></i>
+            <ol className='drop'>
+              <li >Coding Ninja Studio</li>
+              <li>Contest</li>
+              <li>Guided paths</li>
+              <li>Code Problems</li>
+              <li>Interview experience</li>
+              <li>Mock tests</li>
+            </ol>
+          </li>
+          <li> <img src='https://files.codingninjas.in/careercamp-12614.svg ' alt='logo-camp' /></li>
+          {console.log(user)}
+          <li>{user ? <div><Link to={'/dashboard'}><span className='room'>My Class room</span></Link> &nbsp; <span className='span'><img src='https://files.codingninjas.com/gen-assets/Avtar.png' className='dashpic' alt='' /> <button onClick={handlelogout} className='btn-logout'>logout</button></span> </div>
 
-         :         <MDBBtn className='btn-login' onClick={toggleShow}>login</MDBBtn>
-
-         
-         
-         }</li>
-        <li><button className='btn-enroll' onClick={handleenroll}>Enrol Now</button></li>
-
-      </ol>
+            : <MDBBtn className='btn-login' onClick={toggleShow}>login</MDBBtn>
 
 
-      <MDBModal tabIndex='-10' show={centredModal} setShow={setCentredModal}>
-        <MDBModalDialog centered>
-          <MDBModalContent>
-            <MDBModalHeader>
-              <MDBModalTitle style={{ color: "black" }}>REGISTER FORM</MDBModalTitle>
-              <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
-            </MDBModalHeader>
-            <form onSubmit={handledata} >
-              <MDBModalBody>
-                <div className="container">
+
+          }</li>
+          <li><button className='btn-enroll' onClick={handleenroll}>Enrol Now</button></li>
+
+        </ol>
 
 
-                  <label htmlFor="name">FirstName : </label>
-                  <input
-                    required
-                    type="text"
-                    id="name"
-                    value={data.firstName}
-                    name="firstName"
-                    onChange={handleChange}
-                    placeholder="Enter a firstName..."
+        <MDBModal tabIndex='-10' show={centredModal} setShow={setCentredModal}>
+          <MDBModalDialog centered>
+            <MDBModalContent>
+              <MDBModalHeader>
+                <MDBModalTitle style={{ color: "black" }}>REGISTER FORM</MDBModalTitle>
+                <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
+              </MDBModalHeader>
+              <form onSubmit={handledata} >
+                <MDBModalBody>
+                  <div className="container">
 
-                  />
-                  <br></br>
-                  <label htmlFor="lname">LastName : </label>
-                  <input
-                    required
-                    type="text"
-                    id="lname"
-                    value={data.lastName}
-                    name="lastName"
-                    onChange={handleChange}
-                    placeholder="Enter a lastName..."
-                  />
-                  <br></br>
-                  <label htmlFor="email">Email : </label>
-                  <input
-                    required
-                    type="email"
-                    id="email"
-                    value={data.email}
-                    name="email"
-                    onChange={handleChange}
-                    placeholder="Enter a email here!..."
 
-                  />
-                  <br></br>
-                  <label htmlFor="password">password : </label>
-                  <input
-                    required
-                    type="password"
-                    id="password"
-                    value={data.password}
-                    name="password"
-                    onChange={handleChange}
-                    placeholder="Enter a password?...."
-                  />
-                  <br></br>
-                  <label htmlFor="Mobile">Mobile : </label>
-                  <input
-                    required
-                    type="number"
-                    id="Mobile"
-                    value={data.mobile}
-                    name="mobile"
-                    onChange={handleChange}
-                    placeholder="Enter a mobile number"
-                  />
-                  <br></br>
+                    <label htmlFor="name">FirstName : </label>
+                    <input
+                      required
+                      type="text"
+                      id="name"
+                      value={data.firstName}
+                      name="firstName"
+                      onChange={handleChange}
+                      placeholder="Enter a firstName..."
 
-                  <br></br>
-                  <div className="forms">
-                    Already a customer <b className="hover"> <MDBBtn onClick={toggleShow1}>SignIn</MDBBtn></b>
+                    />
+                    <br></br>
+                    <label htmlFor="lname">LastName : </label>
+                    <input
+                      required
+                      type="text"
+                      id="lname"
+                      value={data.lastName}
+                      name="lastName"
+                      onChange={handleChange}
+                      placeholder="Enter a lastName..."
+                    />
+                    <br></br>
+                    <label htmlFor="email">Email : </label>
+                    <input
+                      required
+                      type="email"
+                      id="email"
+                      value={data.email}
+                      name="email"
+                      onChange={handleChange}
+                      placeholder="Enter a email here!..."
+
+                    />
+                    <br></br>
+                    <label htmlFor="password">password : </label>
+                    <input
+                      required
+                      type="password"
+                      id="password"
+                      value={data.password}
+                      name="password"
+                      onChange={handleChange}
+                      placeholder="Enter a password?...."
+                    />
+                    <br></br>
+                    <label htmlFor="Mobile">Mobile : </label>
+                    <input
+                      required
+                      type="number"
+                      id="Mobile"
+                      value={data.mobile}
+                      name="mobile"
+                      onChange={handleChange}
+                      placeholder="Enter a mobile number"
+                    />
+                    <br></br>
+
+                    <br></br>
+                    <div className="forms">
+                      Already a customer <b className="hover"> <MDBBtn onClick={toggleShow1}>SignIn</MDBBtn></b>
+
+                    </div>
+
+                  </div>
+                </MDBModalBody>
+                <MDBModalFooter>
+                  <MDBBtn color='secondary' onClick={toggleShow}>
+                    Close
+                  </MDBBtn>
+                  <MDBBtn className="submit" >submit</MDBBtn>
+                </MDBModalFooter>
+              </form>
+            </MDBModalContent>
+          </MDBModalDialog>
+        </MDBModal>
+
+
+
+        <MDBModal tabIndex='-10' show={loginform} setShow={setLoginform} >
+          <MDBModalDialog centered>
+            <MDBModalContent>
+              <form >
+                <MDBModalHeader>
+                  <MDBModalTitle style={{ color: "black" }}>LOGIN FORM</MDBModalTitle>
+                  <MDBBtn className='btn-close' color='none' onClick={toggleShow1}></MDBBtn>
+                </MDBModalHeader>
+
+                <MDBModalBody>
+                  <div className="container">
+                    <label className='new-form' htmlFor="email1">Email  </label> <br></br>
+                    <input className='new-form'
+                      required
+                      type="email"
+                      id="email1"
+                      value={data1.email}
+                      name="email"
+                      onChange={handlelogin}
+                      placeholder="enter a email here!..."
+                    />
+                    <br></br><br />
+                    <label className='new-form' htmlFor="password1">password  </label> <br></br>
+                    <input className='new-form'
+                      required
+                      type="password"
+                      id="password1"
+                      value={data1.password}
+                      name="password"
+                      onChange={handlelogin}
+                      placeholder="password?..."
+                    />
+
+                    <br></br>
+
+                    <br></br>
+
 
                   </div>
 
-                </div>
-              </MDBModalBody>
-              <MDBModalFooter>
-                <MDBBtn color='secondary' onClick={toggleShow}>
-                  Close
-                </MDBBtn>
-                <MDBBtn className="submit" >submit</MDBBtn>
-              </MDBModalFooter>
-            </form>
-          </MDBModalContent>
-        </MDBModalDialog>
-      </MDBModal>
+
+                </MDBModalBody>
+
+                <MDBModalFooter>
+                  <MDBBtn color='secondary' onClick={toggleShow1}>
+                    Close
+                  </MDBBtn>
+                  <MDBBtn className="submit" onClick={handledata1}>submit</MDBBtn>
+                </MDBModalFooter>
+              </form>
+            </MDBModalContent>
+          </MDBModalDialog>
+        </MDBModal>
+      </div>
 
 
+    </>
 
-      <MDBModal tabIndex='-10' show={loginform} setShow={setLoginform} >
-        <MDBModalDialog centered>
-          <MDBModalContent>
-          <form >
-            <MDBModalHeader>
-              <MDBModalTitle style={{ color: "black" }}>LOGIN FORM</MDBModalTitle>
-              <MDBBtn className='btn-close' color='none' onClick={toggleShow1}></MDBBtn>
-            </MDBModalHeader>
-          
-            <MDBModalBody>
-              <div className="container">
-                  <label className='new-form' htmlFor="email1">Email  </label> <br></br>
-                  <input className='new-form'
-                    required
-                    type="email"
-                    id="email1"
-                    value={data1.email}
-                    name="email"
-                    onChange={handlelogin}
-                    placeholder="enter a email here!..."
-                  />
-                  <br></br><br />
-                  <label className='new-form' htmlFor="password1">password  </label> <br></br>
-                  <input className='new-form'
-                    required
-                    type="password"
-                    id="password1"
-                    value={data1.password}
-                    name="password"
-                    onChange={handlelogin}
-                    placeholder="password?..."
-                  />
-
-                  <br></br>
-                  
-               <br></br>
-
-               
-              </div>
-
-
-            </MDBModalBody>
-
-            <MDBModalFooter>
-              <MDBBtn color='secondary' onClick={toggleShow1}>
-                Close
-              </MDBBtn>
-              <MDBBtn className="submit" onClick={handledata1}>submit</MDBBtn>
-            </MDBModalFooter>
-            </form>
-          </MDBModalContent>
-        </MDBModalDialog>
-      </MDBModal>
-    </div>
   )
 }
 export default Navbar;

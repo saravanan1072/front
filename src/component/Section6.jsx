@@ -69,9 +69,9 @@ export default function Section6() {
             <div className='section6-second-flex'>
 
 
-                {data.map((item)=>{
+                {data.map((item,index)=>{
                     return (
-                        <div  className='section6-second-child' onClick={()=>handleFunc(item)}>
+                        <div keys={index} className='section6-second-child' onClick={()=>handleFunc(item)}>
                        <div>
                        <p>{item.title}</p>
                         <h4>{item.title2}</h4>
