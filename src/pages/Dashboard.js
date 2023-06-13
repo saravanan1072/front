@@ -25,10 +25,10 @@ export default function Dashboard() {
 
             </div>
             <hr></hr>
-            <div className='vl'> <span className='i'><i className="fa fa-user-plus" aria-hidden="true"></i> <p>Refer & earn</p></span></div>
+            <div className='vl'> <span className='i'><i className="fa fa-user-plus" aria-hidden="true"></i> <p>Refer & <br/> earn</p></span></div>
             <div className='img-center'><img  src='https://files.codingninjas.in/explore-our-courses-illustration-27791.svg' alt=''/><br/></div>
            <div  className='text-align'>
-           <p className=' s'>Boost your career with in-demand coding skills.explore <br/> our coding course.</p><br/>
+           <p className=' s'>Boost your career with in-demand coding skills. <br/>explore  our coding course.</p><br/>
 
             <Link to={"/course"}><button className='bttn btn'>Explore our courses</button></Link>
            </div>

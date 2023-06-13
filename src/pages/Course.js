@@ -17,7 +17,7 @@ export default function Course() {
             <button className='b-browse' onClick={handleenroll}>Browse for more course</button>
             <button className='b-try'>try for free</button>
             </div>
-            <img  src='https://files.codingninjas.in/courses-page-top-bg-11535.svg' alt=''/>
+            <img className='picsss' src='https://files.codingninjas.in/courses-page-top-bg-11535.svg' alt=''/>
 
         </div>
         <img src='https://files.codingninjas.com/gsst-homepage_web-27881.svg' alt=''/>

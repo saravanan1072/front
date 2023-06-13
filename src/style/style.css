@@ -555,7 +555,7 @@ hr{
     }
     .home-content{
         position: relative;
-        top: -230px;
+        top: -330px;
         z-index: 1;    
     }
     .home-pic-two{
@@ -564,7 +564,7 @@ hr{
     }
     .home-pic{
        left: 0px;
-        top: 380px; 
+        top: 350px; 
         width: 350px;
         margin-right:0px;
         animation: none;

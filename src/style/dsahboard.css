@@ -128,7 +128,100 @@ hr{
 
 
 
+@media (max-width:480px) {
+    .dasboard-nav-one{
+        margin-left: 10px;  
+    }
+    .img-center{
+        padding: 10px;
+        margin-left: 100px;
+        width: 100px;
+    }
+    .s{
+        position: absolute;
+        top: 30px;
+        left: -10px;
+        margin: 10px;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .vl .i{
+        top: 20px;
+        left: 90px;    
+    }
 
+   
+    .vl{
+        top: -65px;
+        margin-right: 50px;
+        border-right: 1px solid rgb(9, 9, 9);
+        height: 700px;
+        z-index: -1;
+    }
+    .vl .i p{
+   
+        position: relative;
+        top: 15px;
+        /* padding: 10px; */
+        left: -35px;
+    
+    }
+
+
+    .bttn{
+       
+        top: 140px;
+        left: 80px;
+        
+    }
+
+    .background{
+        width: auto;
+        height: auto;
+        background-color: rgb(16, 16, 115);
+        color: white;
+    }
+    #course div div{
+        float: left;
+        margin-top: 50px;
+        margin-left: 20px;
+        text-align: left;
+        
+    }
+    .div-text{
+        font-size: 22px;
+    
+    }
+    .picsss{
+        position: relative;
+        top: -50px;
+        width: 300px;
+        height: 400px;
+        opacity: .5;
+    }
+    
+    #course div div img{
+        /* margin-right: 120px;
+        width: 400px; */
+        float: right;
+    }
+    .b-browse,.b-try{
+        width: 200px;
+        height: 30px;
+        border-radius: 10px;
+        margin: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        background-image:linear-gradient( to right,rgba(243, 13, 13, 0.929),rgb(232, 236, 22));
+    }
+    .b-try{
+        background-image: none;
+    }
+    
+    
+    
+}
 
 
 

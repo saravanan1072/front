@@ -87,18 +87,23 @@ function Navbar() {
     window.scroll({ top: 2800 })
 
   }
+const [nav,setNav]=useState(false)
+const hello=()=>{
+  setNav(!nav)
 
-
+}
 
 
 
   return (
     <>
       
-        <input type='checkbox' id="boxx"  />
-        <label className='label' htmlFor='boxx'><i class="fa-solid fa-bars"></i></label>
+       <div className='mains'>
+       <input type='checkbox' id="boxx"  />
+        <label className='label' htmlFor='boxx' onClick={hello}><i class="fa-solid fa-bars"></i></label>
         <li><img className='hlo' src='https://files.codingninjas.in/logo_variants-white-25005.png' alt='logo' width={"100px"} /></li>
 
+       </div>
       
 
       <div id='nav'>
