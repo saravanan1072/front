@@ -21,7 +21,7 @@ export default function Course() {
 
         </div>
         <img src='https://files.codingninjas.com/gsst-homepage_web-27881.svg' alt=''/>
-    <div style={{marginTop:"-200px"}}>
+    <div className='mac' style={{marginTop:"-200px"}}>
     <div><div><Section6/></div></div>
     </div>
 

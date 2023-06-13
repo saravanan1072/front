@@ -216,15 +216,17 @@ text-align: center;
     display: none;
 }
 
-@media (max-width:480px) {
+@media (max-width:800px) {
     .label{   
         position: relative;
         top: 0px; 
         left: 0px; 
         display: initial;
+        z-index: 1000;
     }
     .hlo{
         display: initial;
+
     }
     #nav{
         position: absolute;
@@ -256,9 +258,7 @@ text-align: center;
         top: 15px;
         /* display: inline; */
     }
-    .mains{
-        /* margin-top: 100px; */
-    }
+   
    
 
 

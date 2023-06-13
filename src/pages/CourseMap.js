@@ -87,11 +87,11 @@ e.preventDefault();
 }
     return(
         <div className="parent-box-course" style={{color:"white"}}>
-        <div className="child-box-course">
+        <div className="child-box-course align">
           {console.log(data.detailcontent)}
           <div className="head-title-child-course">{data.detailhead}</div>
           <div className="sub-head-title-child-course">for Beginners and Experienced Learners</div>
-          <div>{data.detailcontent}</div>
+          <div className='dataa'>{data.detailcontent}</div>
           <div className="inner-box-course-rating">
             <div className="strong-text-rate">4.8</div>&nbsp;&nbsp;&nbsp;&nbsp;
             <img
@@ -103,7 +103,7 @@ e.preventDefault();
           </div>
          
           <button className="buy-now-btn btn" id="rzp-button1" onClick={p}>Buy Now</button><br/><br/><br/>
-          <hr />
+          <hr className='hrr'/>
           <div className="inner-box-course-rating1">
             <div className="container-box-course-inner-parent">
               <div className="strong-text-rate1">10K+</div>
@@ -124,7 +124,7 @@ e.preventDefault();
           </div>
         </div>
         <div className="child-box-course">
-            <img src={data.detailurl}alt="img"/>
+            <img className='ay' src={data.detailurl}alt="img"/>
         </div>
       </div>
     )
