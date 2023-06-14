@@ -212,11 +212,30 @@ hr{
       font-size: 18px;
 }
 
+.course{
+    position: relative;
+    top: -700px;
+    border-radius: 10px;
+    /* left: 200px; */
+    border: 1px solid tomato;
+    display: flex;
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.course:hover{
+    transform: translate(10px,10px);
 
+}
 
 
 
 @media (max-width:480px) {
+    .course{
+        border: none;
+        width: 80%;
+    }
     .dasboard-nav-one{
         margin-left: 10px;  
     }
@@ -395,6 +414,10 @@ hr{
 
 
 @media (min-width:500px) and (max-width:900px) {
+    .course{
+        /* border: none; */
+        width: 60%;
+    }
     .dasboard-nav-one{
         margin-left: 100px;  
     }

@@ -1,11 +1,22 @@
-
+import { names } from '../utility/Navbar';
 import { useNavigate } from 'react-router-dom';
 import $ from "jquery";
-// import axios from 'axios';
+import axios from 'axios';
 const CourseMap=({data})=>{
   const navigate=useNavigate()
   
  
+  const courseDetail=async(data,names)=>{
+    const url="http://localhost:3001/update";
+
+   axios.post(url,{data,names})
+    .then((res)=>{
+      console.log(res)
+      alert(res.data.message)
+    })
+    .then((err)=>console.log(err))
+
+  }
 const p=async()=>{
   var orderId ;
 $(document).ready(function(){
@@ -44,11 +55,10 @@ document.getElementById('rzp-button1').onclick = function(e){
     "order_id": orderId, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
     "handler": function (response){
         alert(response.razorpay_payment_id);
-        alert(response.razorpay_order_id);
-        alert(response.razorpay_signature)
-        // dispatch(emptycartItem())
-        // dispatch(empty())
-       
+        // alert(response.razorpay_order_id);
+        // alert(response.razorpay_signature)
+     
+        courseDetail(data,names)
         navigate('/')
 
         var settings = {
@@ -64,7 +74,7 @@ document.getElementById('rzp-button1').onclick = function(e){
 //creates new orderId everytime
 $.ajax(settings).done(function (response) {
 
-  alert(JSON.stringify(response))
+  // alert(JSON.stringify(response))
 
 }) },
 
