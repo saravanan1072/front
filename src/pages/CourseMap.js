@@ -7,7 +7,7 @@ const CourseMap=({data})=>{
   
  
   const courseDetail=async(data,names)=>{
-    const url="http://localhost:3001/update";
+    const url="https://ninja-wclb.onrender.com/update";
 
    axios.post(url,{data,names})
     .then((res)=>{

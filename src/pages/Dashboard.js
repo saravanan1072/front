@@ -10,7 +10,7 @@ export default function Dashboard() {
   const [data,setData]=useState()
   console.log(names);
   useEffect(()=>{
-    axios.post("http://localhost:3001/usercourse",{names})
+    axios.post("https://ninja-wclb.onrender.com/usercourse",{names})
     .then((res)=>{
       console.log(res.data);
       // setToggle(!toggle)

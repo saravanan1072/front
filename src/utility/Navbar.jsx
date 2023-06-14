@@ -56,7 +56,7 @@ function Navbar() {
 
 
   const handledata = () => {
-    axios.post("http://localhost:3001/signup", data)
+    axios.post("https://ninja-wclb.onrender.com/signup", data)
       .then((res) => { console.log(res) })
       .catch((err) => { console.log(err); })
     alert("Registeration complete sucessfully")
@@ -65,7 +65,7 @@ function Navbar() {
   const handledata1 = (e) => {
     e.preventDefault()
 
-    axios.post("http://localhost:3001/signin", data1)
+    axios.post("https://ninja-wclb.onrender.com/signin", data1)
       .then(async (res) => {
         console.log(res);
         names=res.data.name
