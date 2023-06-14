@@ -555,8 +555,8 @@ hr{
     }
     .home-content{
         position: relative;
-        top: -300px;
-        z-index: 1;    
+        top: -300px; 
+ 
     }
     .home-pic-two{
       display: none;

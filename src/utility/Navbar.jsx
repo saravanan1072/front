@@ -98,12 +98,13 @@ const hello=()=>{
   return (
     <>
       
-       <div className='mains'>
+     
+       <li><img className='hlo' src='https://files.codingninjas.in/logo_variants-white-25005.png' alt='logo' width={"100px"} /></li>
+
        <input type='checkbox' id="boxx"  />
         <label className='label' htmlFor='boxx' onClick={hello}><i class="fa-solid fa-bars"></i></label>
-        <li><img className='hlo' src='https://files.codingninjas.in/logo_variants-white-25005.png' alt='logo' width={"100px"} /></li>
 
-       </div>
+      
       
 
       <div id='nav'>
@@ -167,7 +168,7 @@ const hello=()=>{
         <MDBModal tabIndex='-10' show={centredModal} setShow={setCentredModal}>
           <MDBModalDialog centered>
             <MDBModalContent>
-              <MDBModalHeader>
+              <MDBModalHeader style={{position:"relative",zIndex:"10"}}>
                 <MDBModalTitle style={{ color: "black" }}>REGISTER FORM</MDBModalTitle>
                 <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
               </MDBModalHeader>
