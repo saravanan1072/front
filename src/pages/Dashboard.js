@@ -47,7 +47,7 @@ export default function Dashboard() {
                   <img style={{width:"200px"}} src={item.img} alt={item.course}/>
                   <div  style={{fontSize:"22px",fontWeight:"400"}}>Duration of content: <span style={{fontWeight:"600",fontSize:"28px"}}>{item.time}</span> And <span style={{fontWeight:"600",fontSize:"28px"}}>{item.problem}</span></div>
                   <button className='btn bg-danger' style={{color:"black",margin:"10px",width:"200px"}} disabled>
-                      Entolled
+                      Enrolled
                     </button>
 
 

@@ -3,6 +3,42 @@ import { useNavigate } from 'react-router-dom';
 import student from '../images/student.png'
 import professional from '../images/professional.png'
 import { login } from '../utility/Navbar';
+const data = [
+    {
+        course:"MERN",
+        title: "Full Stack",
+        title2: "MERN Full Stack Web Development",
+        img:"https://files.codingninjas.com/mern-11710.svg",
+        // url: "https://files.codingninjas.com/mern-22525.png",
+        time:"60+ Hours",
+        problem:"350+ problems",
+        ratings:"4.8",
+        count:"17K+ student",
+        price: "49990",
+        detailhead: "Full Stack Web Development Course — MERN Stack",
+        detailcontent:
+          "Learn to build entire web applications from start to finish on one of the most versatile tech stacks : MongoDB, Express.js, React.js and Node.js (MERN stack)",
+        detailurl:
+          "https://files.codingninjas.com/cdn-cgi/image/width=434/mern-9588-1-10374.png"
+      },
+      {
+        course:"Data structures and algorithms",
+        title: "Data structures and algorithms",
+        title2: "Basic of c++ with Data Structures and Algorithms",
+        img:"https://files.codingninjas.com/c-11714.svg",
+        // url: "https://files.codingninjas.com/mern-22525.png",
+        time:"50+ Hours",
+        problem:"250+ problems",
+        ratings:"4.6",
+        count:"27K+ student",
+        url: "https://files.codingninjas.com/c-11714.svg",
+        price: "39900",
+        detailhead:"Basics of C++ with Data Structures and Algorithms",
+        detailcontent:"This is the course to pick if you are just getting into coding and want to build a strong foundation. Widely used in competitive programming.",
+        detailurl:"https://files.codingninjas.com/cdn-cgi/image/width=434/c-10823.png"
+
+      }
+]
 export default function Section6() {
     const navigate=useNavigate();
     const [toggle,setToggle]=useState(true)
@@ -26,42 +62,7 @@ export default function Section6() {
     login ? navigate(`/User/Course/${data.course}`, { state: { data } }) : alert("please login first..!");
   
     }
-    const data = [
-        {
-            course:"MERN",
-            title: "Full Stack",
-            title2: "MERN Full Stack Web Development",
-            img:"https://files.codingninjas.com/mern-11710.svg",
-            // url: "https://files.codingninjas.com/mern-22525.png",
-            time:"60+ Hours",
-            problem:"350+ problems",
-            ratings:"4.8",
-            count:"17K+ student",
-            price: "49990",
-            detailhead: "Full Stack Web Development Course — MERN Stack",
-            detailcontent:
-              "Learn to build entire web applications from start to finish on one of the most versatile tech stacks : MongoDB, Express.js, React.js and Node.js (MERN stack)",
-            detailurl:
-              "https://files.codingninjas.com/cdn-cgi/image/width=434/mern-9588-1-10374.png"
-          },
-          {
-            course:"Data structures and algorithms",
-            title: "Data structures and algorithms",
-            title2: "Basic of c++ with Data Structures and Algorithms",
-            img:"https://files.codingninjas.com/c-11714.svg",
-            // url: "https://files.codingninjas.com/mern-22525.png",
-            time:"50+ Hours",
-            problem:"250+ problems",
-            ratings:"4.6",
-            count:"27K+ student",
-            url: "https://files.codingninjas.com/c-11714.svg",
-            price: "39900",
-            detailhead:"Basics of C++ with Data Structures and Algorithms",
-            detailcontent:"This is the course to pick if you are just getting into coding and want to build a strong foundation. Widely used in competitive programming.",
-            detailurl:"https://files.codingninjas.com/cdn-cgi/image/width=434/c-10823.png"
-
-          }
-    ]
+   
     return (
         <div className='section6-second'>
             <h3>Courses specially curated for</h3>
@@ -133,9 +134,10 @@ export default function Section6() {
     return (
         <div>
            { console.log(display)}
-            {display ? <Course/> :<Handlebutton/>  }
+            {display ? <Course/> : <Handlebutton/>  }
         </div>
        
     )
 }
 
+export {data}
