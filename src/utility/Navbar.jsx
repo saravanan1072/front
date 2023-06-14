@@ -16,6 +16,7 @@ import {
   MDBModalFooter,
 } from 'mdb-react-ui-kit';
 import { Link } from 'react-router-dom';
+var login;
 function Navbar() {
 
 
@@ -93,7 +94,7 @@ const hello=()=>{
 
 }
 
-
+login=user;
 
   return (
     <>
@@ -165,10 +166,10 @@ const hello=()=>{
         </ol>
 
 
-        <MDBModal tabIndex='-10' show={centredModal} setShow={setCentredModal}>
+        <MDBModal tabIndex='100000' show={centredModal} setShow={setCentredModal}>
           <MDBModalDialog centered>
             <MDBModalContent>
-              <MDBModalHeader style={{position:"relative",zIndex:"10"}}>
+              <MDBModalHeader >
                 <MDBModalTitle style={{ color: "black" }}>REGISTER FORM</MDBModalTitle>
                 <MDBBtn className='btn-close' color='none' onClick={toggleShow}></MDBBtn>
               </MDBModalHeader>
@@ -317,3 +318,4 @@ const hello=()=>{
   )
 }
 export default Navbar;
+export {login};

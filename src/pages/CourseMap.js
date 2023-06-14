@@ -5,6 +5,7 @@ import $ from "jquery";
 const CourseMap=({data})=>{
   const navigate=useNavigate()
   
+ 
 const p=async()=>{
   var orderId ;
 $(document).ready(function(){

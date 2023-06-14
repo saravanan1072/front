@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import student from '../images/student.png'
 import professional from '../images/professional.png'
+import { login } from '../utility/Navbar';
 export default function Section6() {
     const navigate=useNavigate();
     const [toggle,setToggle]=useState(true)
@@ -22,7 +23,7 @@ export default function Section6() {
  
 
   const handleFunc=(data)=>{
-     navigate(`/User/Course/${data.course}`, { state: { data } });
+    login ? navigate(`/User/Course/${data.course}`, { state: { data } }) : alert("please login first..!");
   
     }
     const data = [
