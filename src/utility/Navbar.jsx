@@ -85,10 +85,10 @@ function Navbar() {
 
   }
   const handleenroll = () => {
-    window.scroll({ top: 2800 })
+    window.scroll({ top: 3200 })
   }
   const handle = () => {
-    window.scroll({ top: 2800 })
+    window.scroll({ top: 3200 })
 
   }
 const [nav,setNav]=useState(false)
@@ -157,7 +157,7 @@ login=user;
           </li>
           <li> <img src='https://files.codingninjas.in/careercamp-12614.svg ' alt='logo-camp' /></li>
           {console.log(user)}
-          <li>{user ? <div><Link to={'/dashboard'}><span className='room'>My Class room</span></Link> &nbsp; <span className='span'><img src='https://files.codingninjas.com/gen-assets/Avtar.png' className='dashpic' alt='' /> <button onClick={handlelogout} className='btn-logout'>logout</button></span> </div>
+          <li>{user ? <div><Link to={'/dashboard'}><span className='room'>My Class room</span></Link> &nbsp; <span className='span'><img src='https://files.codingninjas.com/gen-assets/Avtar.png' className='dashpic' alt='' /><div className='space'> <button onClick={handlelogout} className='btn-logout'>logout</button></div></span> </div>
 
             : <MDBBtn className='btn-login' onClick={toggleShow}>login</MDBBtn>
 

@@ -82,28 +82,39 @@ hr{
     padding: 20px;
     font-size: 18px;
     color: white;
+    /* background-color: aqua; */
 }
 .section-flex{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: stretch;
+    /* background-color: black; */
+    justify-content:center;
 }
 .section-child{
+    position: relative;
+    top: 0px;
     border-radius: 10px;
     margin: 2px;
     width: 150px;
     height: 500px;
+    /* background-color: brown; */
 }
 .img-size{
-   
+   display: none;
     width: 100px;
     height: 200px;
     margin-left: -20px;
-    position: absolute;
-    top: 300px;
+    position: relative;
+    top: -130px;
 }
-.one{
+.section-child:hover .img-size{
+    /* margin-top: -120px; */
+    margin-left: 120px;
+  display: initial;
+
+}
+ .one{
     background-color: rgb(152, 52, 245);
    
     
@@ -119,12 +130,10 @@ hr{
 }
 .five{
     background-color: rgb(3, 3, 158);
-}
+} 
 .section-child:hover  ,.hover-display:hover {
    
     width: 400px;
-    /* opacity: 1;
-    transition:  linear .3s; */
 
 }
 .section-child:hover .hover-display{
@@ -136,9 +145,7 @@ hr{
     padding: 10px;
     margin: 5px;
     font-size: 16px;
-    opacity: 0;
-  
-    
+    opacity: 0;   
 }
 .hover-display-content{
    
@@ -156,14 +163,61 @@ hr{
    
     margin-left: -140px;
 }
-/* .hover-display:hover{
+
+@media (min-width:1260px) and (max-width:1350px){
+    .section-child{ 
+        margin: 2px;
+        width: 250px;
+        height: 500px;
+    }
+    .img-size{
+        display: none;
+    }
+    .section2{
+        width: 100%;  
+    }
+}
+@media (min-width:1100px) and (max-width:1250px){
+
+    .section2{
+        width: 100%;  
+    }
+    .section-flex{
+       margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+      
+    }
+    .section-child{ 
+        margin: 2px;
+        width: 300px;
+        height: 500px;
+    }
+    .img-size{
+        display: none;
+    }
+    .section-child:hover  ,.hover-display:hover  {
+        width: 400px;
+       
+    
+    }
    
-    opacity: 1;
-    cursor: pointer;
 
+}
 
-} */
-
+@media (min-width:900px) and (max-width:1100px){
+    .section-child{ 
+        margin: 2px;
+        width: 250px;
+        height: 450px;
+    }
+    .img-size{
+        display: none;
+    }
+    .section2{
+        width: 100%;  
+    }
+}
 @media (max-width:480px) {
     #home{
         height: 1000px;
@@ -549,7 +603,143 @@ hr{
 
 
 
+/* sdfghmngbfvdcdvbn */
+
+.home-render{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;  
+    background-color: rgb(250, 251, 252);
+  }
+  /* .home-render-comp{
+    margin-top: 100px;
+  }
+
+  .home-render-flex{
+    background-color:whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  } */
+ 
+#sub-nav-fourth-Page{
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    background-color: whitesmoke;
+    padding: 10px 20px;
+    margin-top: 30px;
+    /* box-shadow: 1px 1px 5px black; */
+}
+.hover-effect-child1:hover{
+    border: 2px solid transparent;
+    color: rgba(51, 0, 255, 0.845);
+}
+.hover-effect-child1{
+      background-color:wheat;
+      font-size: 16px;
+      border: none;
+  }
+
+  #container-fourth-page-nav-click-content{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3% 8%;
+    /* flex-wrap: wrap; */
+ }
+ .parent-fourth-page-sublim,.child-fourth-page-sublim{
+     display: flex;
+     text-align: left;
+     align-items:left;
+ }
+ .child-fourth-page-sublim{
+     flex-direction: column;
+     
+ }
+ .child-fourth-page-font-big{
+     font-size: 36px;
+     font-weight: 700;
+ }
+ .short-width-fourth-page{
+     font-size: medium;
+     width: 150px;
+ }
+ .sub-container-4-page-click{
+     text-align: left;
+ }
+ .a4-page-one{
+     font-size: 22px;
+     font-weight: 600;
+     color: rgb(247, 168, 23);
+ }
+ .a4-page-two{
+     font-size: 24px;
+     font-weight: 600;
+     margin:3% 0%;
+ }
+ .a4-page-three{
+     font-size: 14px;
+ }
+ .a4-page-four{
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+ }
+
+
+
+
+
 @media (max-width:480px) {
+    .home-render{
+        width: 100%;
+      
+      }
+      #sub-nav-fourth-Page{
+        width: auto; 
+        justify-content: space-evenly; 
+        padding: 0px;
+        margin: 10px;
+        
+    }
+    .hover-effect-child1{
+        border: none;
+        background-color:wheat;
+        padding: 5px;
+        margin: 3px;
+        font-size: 12px;
+    }
+    #container-fourth-page-nav-click-content{
+        
+        margin: 10px;
+        justify-content: start;
+        padding: 0px;
+     }
+     .parent-fourth-page-sublim,.child-fourth-page-sublim{  
+        width: 400px;
+        text-align: center;
+        align-items:center;
+    }
+  
+    .child-fourth-page-font-big{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    #img-fourth-page-slide-part{
+        width: 300px;
+        position: relative;
+        top: 0px;
+        left: -400px;
+        opacity: .2;
+    }
+   
+
+
+
+
     #home{
         height: 1000px;
     }
@@ -659,6 +849,50 @@ hr{
 }
 
 @media (min-width:500px) and (max-width:900px) {
+
+    
+    .home-render{
+        width: 100%;
+      
+      }
+      #sub-nav-fourth-Page{
+        width: auto; 
+        justify-content: space-evenly; 
+        padding: 0px;
+        margin: 10px;
+        
+    }
+    .hover-effect-child1{
+        border: none;
+        background-color:wheat;
+        padding: 5px;
+        margin: 3px;
+        font-size: 12px;
+    }
+    #container-fourth-page-nav-click-content{
+        
+        margin: 10px;
+        justify-content: start;
+        padding: 0px;
+     }
+     .parent-fourth-page-sublim,.child-fourth-page-sublim{  
+        width: 400px;
+        text-align: center;
+        align-items:center;
+    }
+  
+    .child-fourth-page-font-big{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    #img-fourth-page-slide-part{
+        width: 300px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        opacity: .2;
+    }
+   
     .home-content{
         position: absolute;
         width: 400px;

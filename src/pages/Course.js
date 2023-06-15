@@ -21,7 +21,7 @@ export default function Course() {
         
         <div className='background' >
             <div className='.div'>
-                <p><h2>Online Coding Courses</h2></p>
+                <p className='cc'><h2>Online Coding Courses</h2></p>
             <p className='div-text'>Most loved online coding courses for college students and working <br/>professionals</p>
             <button className='b-browse' onClick={handleenroll}>Browse for more course</button>
             <button className='b-try'>try for free</button>
@@ -30,21 +30,19 @@ export default function Course() {
 
         </div>
         <img src='https://files.codingninjas.com/gsst-homepage_web-27881.svg' alt=''/>
-    <div className='mac' style={{marginTop:"-200px"}}>
-    {/* <div><div><Section6/></div></div> */}
+        <br/>
 
-
-    <div className='section6-second' style={{marginTop:"200px"}}>
+        <div className='section6-second'>
             <h3>Courses specially curated for</h3>
-            <p>{msg.one}    <span  style={{color:"tomato"}}>Edit preference<i className="fa-sharp fa-light fa-clock"></i></span></p>
+            <p>{msg}    <span onClick={handleFunc} style={{color:"tomato"}}>Edit preference<i className="fa-sharp fa-light fa-clock"></i></span></p>
             <h4>Recommended courses for students</h4>
             <div className='section6-second-flex'>
 
 
                 {data.map((item,index)=>{
                     return (
-                        <div keys={index}  className='section6-second-child' onClick={()=>handleFunc(item)}>
-                       <div style={{marginLeft:"0px"}}>
+                        <div keys={index} className='section6-second-child' onClick={()=>handleFunc(item)}>
+                       <div>
                        <p>{item.title}</p>
                         <h4>{item.title2}</h4>
                         <img src={item.img} alt='' width={"50px"}/>
@@ -60,14 +58,9 @@ export default function Course() {
 
                   
             </div>
-        </div>
-
-    </div>
+        </div> <br/>
 
     
-    <div style={{position:"relative",left:"-200px"}}>
-    {/* <Footer/> */}
-    </div>
 
     </div>
   )

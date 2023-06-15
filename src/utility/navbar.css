@@ -100,15 +100,17 @@
     height: 30px;
     border-radius: 50%;
 }
- 
+ .space{
+    width: 100px;
+    padding: 20px;
+    background-color:none;
+    position: absolute;
+    display: none;
+    top: 0px;
+    cursor: pointer;
+    left: -30px;
 
-
-
-
-
-
-
-
+ }
 .btn-login,.btn-logout{
     width: 80px;
     height: 35px;
@@ -117,10 +119,8 @@
     border-radius: 10px;
 }
 .btn-logout{
-    position: absolute;
-    display: none;
-    top: 20px;
-    left: -10px;
+   position: relative;
+   top: 10px;
 }
 .room{
     color: aquamarine;
@@ -140,7 +140,7 @@
     position: relative;
     left: 0px;
 }
-.span:hover .btn-logout{
+.span:hover .space{
     display: initial;
    
 }

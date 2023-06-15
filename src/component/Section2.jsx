@@ -28,7 +28,7 @@ export default function Section2() {
           </div>
           <img
             src="https://w7.pngwing.com/pngs/31/952/png-transparent-graphy-woman-businessperson-smiling-woman-arm-girl-business.png"
-            className="img-size"
+            className="img-size oneee"
             alt="boy"
           />
         </div>
