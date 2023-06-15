@@ -6,6 +6,7 @@ import Course from '../pages/Course';
 import Dashboard from '../pages/Dashboard';
 import Navbar from '../utility/Navbar';
 import Newcourse from '../pages/Newcourse';
+import Fulldetails from '../pages/Fulldetails';
 export default function Router() {
   return (
     <div>
@@ -16,7 +17,7 @@ export default function Router() {
       <Route path='' element={ <Home/>}/>
       <Route path='/course' element={<Course/>}/>
       <Route path='/dashboard' element={<Dashboard/>}/>
-     
+     <Route path='/fulldetail' element={<Fulldetails/>}/>
       <Route path='/User/Course/:id' element={<Newcourse/>}/>
  
     </Routes>
