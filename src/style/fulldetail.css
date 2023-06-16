@@ -116,6 +116,34 @@
     width: 50%;
     border: 1px solid black;
 }
+#iddd{
+background-color: rgb(6, 6, 75);
+}
+.final{
+    color :white
+}
+.final-div{
+    margin-left:200px; 
+    padding-top: 50px;
+    width: 30%;
+    text-align: left;
+}
+.final-div  p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin: 20px;
+}
+.final-div h3 { 
+    font-size: 38px;
+}
+.final-div img{
+    position: relative;
+    top: -100px;
+    z-index: 0;
+    width: auto;
+    height: 200px;
+    opacity: 0;
+} 
 
 @media (min-width:600px) and (max-width:921px) {
     .formsss{

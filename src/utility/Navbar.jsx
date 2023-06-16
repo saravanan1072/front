@@ -53,7 +53,7 @@ function Navbar() {
     setUser(!user)
   }
 
-
+  
 
   const handledata = () => {
     axios.post("https://ninja-wclb.onrender.com/signup", data)

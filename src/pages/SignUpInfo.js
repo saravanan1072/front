@@ -3,7 +3,24 @@ import React from "react";
 function SignUpInfo({ formData, setFormData }) {
         const handleChange = (e) => {
             setFormData({ ...formData, [e.target.name]: e.target.value });
+           
       };
+
+      // const func=async()=>{
+      //   console.log(formData.name.length);
+      //       if(formData.name.length <= 5){
+      //          return alert(`name should be atleast five characters `)
+        
+      //       }else{
+      //         return ("fine")
+      //       }
+        
+           
+        
+        
+      //     }
+         
+        
   return (
     <div className="sign-up-container">
 
@@ -26,7 +43,7 @@ function SignUpInfo({ formData, setFormData }) {
                     <div className='grid-form-child'> <input type='text' placeholder='Address1*'  value={formData.address1} name="address1" onChange={handleChange} /> </div>
                     <div className='grid-form-child'> <input type='text' placeholder='Address2'  value={formData.address2} name="address2" onChange={handleChange} /> </div>
                     <div className='grid-form-child'> <input type='number' placeholder='pincode*'  value={formData.pincode} name="pincode" onChange={handleChange} /> </div>
-                    <div className='grid-form-child'><select placeholder='State'  value={formData.country} name="state" onChange={handleChange}>
+                    <div className='grid-form-child'><select placeholder='State'  value={formData.state} name="state" onChange={handleChange}>
                         <option>State*</option>
                         <option value={'Andhra Pradesh'}>Andhra Pradesh</option>
                         <option value={'Arunachal Pradesh'}>Arunachal Pradesh</option>
@@ -44,6 +61,7 @@ function SignUpInfo({ formData, setFormData }) {
                          <option value={'China'}>China</option>
                         </select>
                    </div>
+                 
 
     </div>
     </div>
