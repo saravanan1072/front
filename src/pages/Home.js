@@ -7,6 +7,7 @@ import Footer from '../component/Footer';
 import Section from '../component/Section5';
 import Section6 from '../component/Section6';
 import Section7 from '../component/Section7';
+import { Link } from 'react-router-dom';
 export default function Home() {
  return (
     <div id='home'>
@@ -41,7 +42,8 @@ export default function Home() {
        <p  className="ma" style={{fontSize:"32px",margin:"auto",padding:"20px",fontWeight:"bolder"}}>14,000+ CODING NINJAS TO INSPIRE YOU</p>
 
       <Section2/>
-      <button className='btn'>Hear more stories from our alumni</button>
+      <Link to={'/final'}>      <button  className='btn bg-primary bb'>Hear more stories from our alumni</button>
+</Link>
       <Section3/>
       <Section4/>
           <Section/>

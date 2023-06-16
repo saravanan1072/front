@@ -2,7 +2,7 @@ import React from 'react'
 //import Section6 from '../component/Section6';
 import "../style/style.css"
 import { login } from '../utility/Navbar';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 
 import { data } from '../component/Section6';
 //import Footer from '../component/Footer';
@@ -24,7 +24,7 @@ export default function Course() {
                 <p className='cc'><h2>Online Coding Courses</h2></p>
             <p className='div-text'>Most loved online coding courses for college students and working <br/>professionals</p>
             <button className='b-browse' onClick={handleenroll}>Browse for more course</button>
-            <button className='b-try'>try for free</button>
+           <Link to='/fulldetail'> <button className='b-try' >try for free</button></Link>
             </div>
             <img className='picsss' src='https://files.codingninjas.in/courses-page-top-bg-11535.svg' alt=''/>
 

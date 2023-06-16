@@ -7,6 +7,9 @@ import Dashboard from '../pages/Dashboard';
 import Navbar from '../utility/Navbar';
 import Newcourse from '../pages/Newcourse';
 import Fulldetails from '../pages/Fulldetails';
+import Sample from '../pages/Sample';
+import BasicForm from '../pages/BasicForm';
+import FinalPage from '../pages/FinalPage';
 export default function Router() {
   return (
     <div>
@@ -19,7 +22,9 @@ export default function Router() {
       <Route path='/dashboard' element={<Dashboard/>}/>
      <Route path='/fulldetail' element={<Fulldetails/>}/>
       <Route path='/User/Course/:id' element={<Newcourse/>}/>
- 
+      <Route path='/s' element={<Sample/>}/>
+      <Route path='/basicform' element={<BasicForm/>}/>
+      <Route path="/final" element={<FinalPage/>}/>
     </Routes>
     </BrowserRouter>
     </div>

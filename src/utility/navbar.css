@@ -146,7 +146,8 @@
 }
 
  /* sign up */
-input{
+
+.input{
     width: 200px;
     height: 25px;
     margin: 5px;
@@ -154,6 +155,7 @@ input{
     border: 1px solid tomato;
     border-radius: 10px;
 }
+
 .container{
         color:black;
 text-align: center;

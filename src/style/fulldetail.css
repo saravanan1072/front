@@ -1,0 +1,181 @@
+
+#idd{
+    width: auto;
+    height: auto;
+    background-color: rgba(5, 5, 132, 0.875);
+}
+.bb{
+    position: relative;
+    z-index: 1000;
+}
+.formsss{
+    position: relative;
+    z-index: 100;
+    top: 100px;
+    left: 100px;
+    width: 450px;
+    height: 500px;
+    overflow: scroll;
+    background-color: white;
+}
+.fontt{
+    font-Size:28px;
+
+
+}
+
+.formss  div{
+    position: relative;
+    padding: 10px;
+    text-align: left;
+}
+.formsss > div >hr{
+    position: absolute;  
+    top: 40px;
+    width: 100px;
+}
+
+.radio input{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+#grid-form{
+    display: flex;
+    margin: auto;
+    width: 90%;
+   flex-direction: column;
+    
+}
+.grid-form-child{
+    margin: 5px;
+    padding: 2px;
+
+}
+.grid-form-child input{
+    width: 350px;
+}
+
+
+
+.line{
+    position: relative;
+    top: -50px;
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 20px;
+    
+}
+.line img{
+    position: absolute;
+    top: -100px;
+    left: 800px;
+}
+
+.basicform{
+    position: relative;
+    top: 50px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    background-color:white;
+    border-radius: 20px;
+
+}
+.basicform div{
+    align-items: center;
+
+}
+.sep{
+    background-color: rgb(228, 225, 225);
+    border-radius: 10px;
+    /* margin: auto; */
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.fl{
+    display: flex;
+    justify-content: center;
+}
+.fl div{
+    margin: 10px;
+}
+.cont{
+    margin: 20px;
+    display: flex;
+    width: 50%;
+    border: 1px solid black;
+}
+
+@media (min-width:600px) and (max-width:921px) {
+    .formsss{
+        z-index: 1;
+        top:50px;
+        left: 0px;
+        width: 420px;
+        height: 500px;
+       
+    }
+    
+.line{
+    position: relative;
+    top: -50px;
+    margin: auto;
+    width: 80%;
+    height: 300px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    border-radius: 20px;
+    
+}
+.line img{
+    position: absolute; 
+    top: -100px;
+    left: 200px;
+}
+    
+
+
+
+    
+}
+
+@media (max-width:480px) {
+    .formsss{
+        z-index: 1;
+        top:20px;
+        left: 20px;
+        width: 360px;
+        height: 400px;
+       
+    }
+    .line img{
+        width: 400px;
+        position: absolute; 
+        top: 0px;
+        left: -10px;
+        opacity: .7;
+    }
+    .ou{
+        width: 350px;
+    }
+    .grid-form-child input{
+        width: 300px;
+    }
+    .fontt{
+        font-size: 22px;
+    }
+
+
+}

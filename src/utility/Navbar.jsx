@@ -182,7 +182,7 @@ login=user;
 
 
                     <label htmlFor="name">FirstName : </label>
-                    <input
+                    <input className='input'
                       required
                       type="text"
                       id="name"
@@ -194,7 +194,7 @@ login=user;
                     />
                     <br></br>
                     <label htmlFor="lname">LastName : </label>
-                    <input
+                    <input className='input'
                       required
                       type="text"
                       id="lname"
@@ -205,7 +205,7 @@ login=user;
                     />
                     <br></br>
                     <label htmlFor="email">Email : </label>
-                    <input
+                    <input className='input'
                       required
                       type="email"
                       id="email"
@@ -217,7 +217,7 @@ login=user;
                     />
                     <br></br>
                     <label htmlFor="password">password : </label>
-                    <input
+                    <input className='input'
                       required
                       type="password"
                       id="password"
@@ -228,7 +228,7 @@ login=user;
                     />
                     <br></br>
                     <label htmlFor="Mobile">Mobile : </label>
-                    <input
+                    <input className='input'
                       required
                       type="number"
                       id="Mobile"
@@ -272,7 +272,7 @@ login=user;
                 <MDBModalBody>
                   <div className="container">
                     <label className='new-form' htmlFor="email1">Email  </label> <br></br>
-                    <input className='new-form'
+                    <input className='new-form input' 
                       required
                       type="email"
                       id="email1"
@@ -283,7 +283,7 @@ login=user;
                     />
                     <br></br><br />
                     <label className='new-form' htmlFor="password1">password  </label> <br></br>
-                    <input className='new-form'
+                    <input className='new-form input'
                       required
                       type="password"
                       id="password1"
